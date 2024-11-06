@@ -8,7 +8,7 @@ export default defineNuxtConfig({
          name: 'Dociva',
          short_name: 'Dociva',
          description:
-            'A Progressive Web Application that enhances your document reading experience in a local environment.',
+            'This Progressive Web App lets you upload, read, and manage documents in the cloud. With support for PDF, DOCX, and MD formats, it offers fast access to your files from anywhere and a smooth reading experience.',
          theme_color: '#101010',
          background_color: '#101010',
          display: 'standalone',
@@ -77,7 +77,7 @@ export default defineNuxtConfig({
                hid: 'description',
                name: 'description',
                content:
-                  'A Progressive Web Application that enhances your document reading experience in a local environment.',
+                  'This Progressive Web App lets you upload, read, and manage documents in the cloud. With support for PDF, DOCX, and MD formats, it offers fast access to your files from anywhere and a smooth reading experience.',
             },
             {
                hid: 'keywords',
@@ -95,7 +95,7 @@ export default defineNuxtConfig({
             {
                property: 'og:description',
                content:
-                  'A Progressive Web Application that enhances your document reading experience in a local environment.',
+                  'This Progressive Web App lets you upload, read, and manage documents in the cloud. With support for PDF, DOCX, and MD formats, it offers fast access to your files from anywhere and a smooth reading experience.',
             },
             {
                property: 'og:url',
@@ -132,7 +132,7 @@ export default defineNuxtConfig({
             {
                property: 'twitter:description',
                content:
-                  'A Progressive Web Application that enhances your document reading experience in a local environment.',
+                  'This Progressive Web App lets you upload, read, and manage documents in the cloud. With support for PDF, DOCX, and MD formats, it offers fast access to your files from anywhere and a smooth reading experience.',
             },
             {
                property: 'twitter:card',
