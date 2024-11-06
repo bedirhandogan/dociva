@@ -5,6 +5,7 @@
    "scripts": {
       "build": "nuxt build",
       "dev": "nuxt dev",
+      "start": "nuxt start",
       "generate": "nuxt generate",
       "preview": "nuxt preview",
       "postinstall": "nuxt prepare",
@@ -15,6 +16,7 @@
       "@nuxt/icon": "^1.6.1",
       "@nuxtjs/google-fonts": "^3.2.0",
       "@vite-pwa/nuxt": "^0.10.6",
+      "normalize.css": "^8.0.1",
       "nuxt": "^3.13.2",
       "vue": "latest",
       "vue-router": "latest"

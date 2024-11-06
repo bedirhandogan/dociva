@@ -1,11 +1,11 @@
 <script setup>
 import '@/assets/styles.css';
+import 'normalize.css';
 </script>
 
 <template>
    <div>
       <VitePwaManifest />
-      Hello World
-      <Icon name="tabler:alert-square-rounded-filled" />
+      <NuxtLayout name="dashboard" />
    </div>
 </template>

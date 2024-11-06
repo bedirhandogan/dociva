@@ -61,7 +61,7 @@ export default defineNuxtConfig({
          navigateFallback: '/',
       },
       devOptions: {
-         enabled: true,
+         enabled: false,
          type: 'module',
          suppressWarnings: true,
       },
@@ -163,7 +163,7 @@ export default defineNuxtConfig({
    googleFonts: {
       preload: true,
       families: {
-         Poppins: [400, 500],
+         Poppins: [300, 400, 500, 600],
       },
    },
 });

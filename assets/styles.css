@@ -42,9 +42,33 @@ body {
    font-family: 'Poppins', sans-serif;
    background-color: var(--color-chaos-black);
    color: var(--color-white);
-   font-weight: 400;
+   font-weight: 300;
 }
 
 * {
    box-sizing: border-box;
+}
+
+.icon {
+   color: var(--color-black-oak);
+   transition: 200ms all ease;
+   stroke-width: 1px;
+
+   g,
+   path {
+      stroke-width: 1.5;
+   }
+
+   &.active,
+   &.active-hover:hover {
+      color: var(--color-shark-fin);
+   }
+}
+
+.icon.stroke-2 {
+
+   g,
+   path {
+      stroke-width: 2;
+   }
 }
