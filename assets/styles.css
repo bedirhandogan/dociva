@@ -50,9 +50,10 @@ body {
 }
 
 .icon {
-   color: var(--color-black-oak);
+   display: block;
+   --icon-color: var(--color-black-oak);
+   color: var(--icon-color);
    transition: 200ms all ease;
-   stroke-width: 1px;
 
    g,
    path {
@@ -61,12 +62,13 @@ body {
 
    &.active,
    &.active-hover:hover {
-      color: var(--color-shark-fin);
+      cursor: pointer;
+      --interaction-icon-color: var(--color-shark-fin);
+      color: var(--interaction-icon-color);
    }
 }
 
 .icon.stroke-2 {
-
    g,
    path {
       stroke-width: 2;
