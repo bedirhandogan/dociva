@@ -378,15 +378,15 @@ const activeRecentPage = ref(0);
                }
             }
          }
-      }
-   }
 
-   .footer {
-      display: flex;
-      justify-content: space-between;
-      font-size: 12px;
-      color: var(--color-squant);
-      font-weight: 400;
+         & > .footer {
+            display: flex;
+            justify-content: space-between;
+            font-size: 12px;
+            color: var(--color-squant);
+            font-weight: 400;
+         }
+      }
    }
 }
 </style>
