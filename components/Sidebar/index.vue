@@ -237,7 +237,7 @@ const toggleSidebar = () => {
    border-radius: 5px;
    background-color: var(--color-eerie-black);
    color: var(--color-squant);
-   font-weight: 500;
+   font-weight: 400;
    cursor: default;
 }
 </style>

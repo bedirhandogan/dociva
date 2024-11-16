@@ -90,7 +90,7 @@ const toggleCollapse = () => {
    background-color: var(--color-eerie-black);
    font-size: 12px;
    color: var(--color-squant);
-   font-weight: 500;
+   font-weight: 400;
    border-radius: 5px;
    line-height: 0.66;
 }
@@ -139,6 +139,6 @@ const toggleCollapse = () => {
 .badge {
    font-size: 12px;
    color: var(--color-stone-cold);
-   font-weight: 600;
+   font-weight: 500;
 }
 </style>
