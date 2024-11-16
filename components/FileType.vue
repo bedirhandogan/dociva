@@ -8,7 +8,7 @@ defineProps({
    <div class="file-type">{{ type }}</div>
 </template>
 
-<style>
+<style scoped>
 .file-type {
    padding: 6px 5.5px 5px 5px;
    background-color: var(--color-pot-black);
@@ -18,5 +18,7 @@ defineProps({
    font-size: 10px;
    font-weight: 500;
    line-height: 0.8;
+   width: max-content;
+   user-select: none;
 }
 </style>

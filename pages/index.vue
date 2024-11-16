@@ -127,7 +127,7 @@ const tableClusterData = {
 const activeClustersPage = ref(0);
 
 const tableRecentHeader = [
-   { label: 'Name', key: 'name' },
+   { label: 'Name', key: 'name', extra: 'file-type' },
    { label: 'Cluster', key: 'cluster' },
    { label: 'Size', key: 'size', sortable: true, type: 'size' },
    { label: 'Last Updated', key: 'lastUpdated', type: 'date', sortable: true },
@@ -136,30 +136,35 @@ const tableRecentData = {
    0: [
       {
          name: 'Asteroid 1',
+         'file-type': 'PDF',
          cluster: 'Asteroid Archive',
          size: '1.2 MB',
          lastUpdated: 'Mon Nov 11 2024 12:29:15 GMT+0300',
       },
       {
          name: 'Asteroid 2',
+         'file-type': 'PDF',
          cluster: 'Asteroid Archive',
          size: '1.3 MB',
          lastUpdated: date,
       },
       {
          name: 'Asteroid 3',
+         'file-type': 'PDF',
          cluster: 'Asteroid Archive',
          size: '1.4 MB',
          lastUpdated: date,
       },
       {
          name: 'Asteroid 4',
+         'file-type': 'PDF',
          cluster: 'Asteroid Archive',
          size: '1.5 MB',
          lastUpdated: date,
       },
       {
          name: 'Asteroid 5',
+         'file-type': 'PDF',
          cluster: 'Asteroid Archive',
          size: '1.6 MB',
          lastUpdated: date,
@@ -168,30 +173,35 @@ const tableRecentData = {
    1: [
       {
          name: 'Asteroid 1.2',
+         'file-type': 'PDF',
          cluster: 'Asteroid Archive',
          size: '1.2 MB',
          lastUpdated: 'Mon Nov 11 2024 12:29:15 GMT+0300',
       },
       {
          name: 'Asteroid 2.2',
+         'file-type': 'PDF',
          cluster: 'Asteroid Archive',
          size: '1.3 MB',
          lastUpdated: date,
       },
       {
          name: 'Asteroid 3.2',
+         'file-type': 'PDF',
          cluster: 'Asteroid Archive',
          size: '1.4 MB',
          lastUpdated: date,
       },
       {
          name: 'Asteroid 4.2',
+         'file-type': 'PDF',
          cluster: 'Asteroid Archive',
          size: '1.5 MB',
          lastUpdated: date,
       },
       {
          name: 'Asteroid 5.2',
+         'file-type': 'PDF',
          cluster: 'Asteroid Archive',
          size: '1.6 MB',
          lastUpdated: date,
@@ -218,7 +228,6 @@ const activeRecentPage = ref(0);
                <span>View and edit your content.</span>
             </div>
          </div>
-
          <Search />
       </div>
 

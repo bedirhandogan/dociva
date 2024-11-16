@@ -1,5 +1,6 @@
 <script setup>
 import moment from 'moment';
+import FileType from './FileType.vue';
 
 const props = defineProps({
    header: {
@@ -129,7 +130,11 @@ const sortedData = () => {
             <span v-else-if="HItem.type === 'date'">
                {{ moment(DItem[HItem.key], 'ddd MMM DD YYYY HH:mm:ss ZZ').fromNow() }}
             </span>
-            <span v-else>{{ DItem[HItem.key] }}</span>
+            <span v-else-if="HItem.extra === 'file-type'" class="file-type-wrapper">
+               {{ DItem[HItem.key] }}
+               <FileType :type="DItem[HItem.extra]" />
+            </span>
+            <span v-else>{{ DItem[HItem.key] }} </span>
          </div>
       </div>
    </div>
@@ -178,6 +183,12 @@ const sortedData = () => {
 
          &:last-child {
             border-right: none;
+         }
+
+         .file-type-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 10px;
          }
       }
 
