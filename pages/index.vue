@@ -1,6 +1,7 @@
 <script setup>
 import Button from '../components/Button.vue';
 import Pagination from '../components/Pagination.vue';
+import Tooltip from '../components/Tooltip.vue';
 
 const sidebarCollapsedState = useSidebarCollapsed();
 
@@ -262,7 +263,14 @@ const activeRecentPage = ref(0);
                      Recent Documents
                      <span class="subtitle">View All Recent Documents.</span>
                   </div>
-                  <Icon name="tabler:info-circle" size="20" mode="svg" class="icon active-hover" />
+                  <Tooltip text="Shows document history for the last 2 weeks only">
+                     <Icon
+                        name="tabler:info-circle"
+                        size="20"
+                        mode="svg"
+                        class="icon active-hover"
+                     />
+                  </Tooltip>
                </div>
                <Table
                   :header="tableRecentHeader"
